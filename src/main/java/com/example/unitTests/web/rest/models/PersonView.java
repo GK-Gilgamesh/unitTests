@@ -4,6 +4,7 @@ import com.example.unitTests.service.model.Person;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+import javax.validation.constraints.NotNull;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -11,8 +12,10 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 public class PersonView {
 
+    @NotNull
     private String firstName;
 
+    @NotNull
     private String lastName;
 
     private JobView job;
